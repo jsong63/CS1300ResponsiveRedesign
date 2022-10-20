@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:500');
+
+img {
+    width: 100%;
+    object-fit: fill;
+    padding: 3px;
+}
+
+body {
+    font-family: "DM Sans";
+    background-color: #F5FAFA;
+}
+
+h2{
+    color: #6D929B;
+    margin-top: 3%;
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 0.65;
+    
+}
+
+.img1 {
+    height: 90%;
+}
+
+
+/* .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: #0000;
+} */
+
+.navbar-item {
+    color: #0000;
+}
+
+.gold-text {
+    color: #F4CA0A;
+}
+
+.btn {
+    font-family: "DM Sans";
+
+}
+
+.gold-button{
+    --bs-btn-bg: #F4CA0A;
+    --bs-btn-hover-border-color: #CEAB0F;
+}
+
+.btn-primary{
+    --bs-btn-bg: #F4CA0A;
+    --bs-btn-border-color:#F4CA0A;
+    --bs-btn-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #CEAB0F;
+    --bs-btn-hover-border-color:var(--bs-btn-hover-bg);
+    --bs-btn-active-color: black;
+    --bs-btn-active-bg: #CBA808;
+    --bs-btn-active-border-color: #CBA808;
+
+}
+
+.carousel-caption{
+    bottom: 0rem;
+    padding-bottom: 0.2rem
+}
+
+.btn-dark{
+    --bs-btn-bg: #000;
+}
+
+.black-text{
+    color: #000;
+    margin-top: 1rem;
+}
+
+.vstack{
+    display:block;
+    padding: 0;
+}

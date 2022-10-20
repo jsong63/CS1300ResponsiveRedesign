@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <title> Responsive Redesign </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="text-align: center; background-color: #C1DAD6; padding-top:2rem">
+        <h1> Responsive Redesign</h1>
+        <!-- Navbar Citation: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg navbar-black" style="background-color: #C1DAD6">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#colnb"
+                    aria-controls="colnb" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="colnb">
+                    <ul class="navbar-nav m-auto">
+                        <li class="navbar-item"><a class="nav-link" style="color:black" href="#problems"> Identifying
+                                Problems </a>
+                        </li>
+                        <li class="navbar-item"><a class="nav-link" style="color:black" href="#lo-fi"> Lo-Fi Wireframes
+                            </a>
+                        </li>
+                        <li class="navbar-item"><a class="nav-link" style="color:black" href="#hi-fi"> Hi-Fi Prototypes
+                            </a>
+                        </li>
+                        <li class="navbar-item"><a class="nav-link" style="color:black" href="#redesign"> Responsive
+                                Redesign
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid px-4 pb-4 background-color: #F4EBD0">
+        <h2>Part 0: Project Overview</h2>
+        <div class="row">
+            <p>In this project, I am redesigning the RM Booster Club website to
+                make it more responsive by examining problems usability problems, creating low-fidelity wireframes and
+                high-fidelity prototypes, and finally redesigning the website with HTML/CSS!
+                I chose
+                to examine this
+                website because it belongs to
+                an organization that meant a lot to me in high school as a member of the tennis team; the Richard
+                Montgomery
+                Booster Club helped support purchases of equipment we needed for practices and matches and even
+                provided me
+                with a scholarship for college. </p>
+        </div>
+        <h2>Part 1: Identifying Usability Problems</h2>
+        <h3><a href="https://www.rmboosters.com" target="_blank">Original Website</a></h3>
+
+        <div class="row mt-2 mb-0">
+            <div class="col-md-6 align-items-center">
+                <img class="img1" src="original.png" alt="original website">
+            </div>
+            <div class="col-md-6 align-items-center">
+                <img class="img1" src="original_2.png" alt="original website">
+            </div>
+        </div>
+        <h3 id="problems">Identifying Problems</h3>
+        <p>I first wrote down the problems I found with the usability of the website in its current state. These are
+            some that I came up with.</p>
+        <br>
+        <ol>
+            <li>A user’s mental model is that notable pictures are arranged in a slideshow and can be clicked through,
+                but the pictures, as they are, are crammed in a small space and are static.
+            </li>
+            <li>The top heading of the website is not prominently displayed and disappears when the screen size shrinks.
+            </li>
+            <li>The social media icon is not easily noticeable, leading to lower learnability and memorability. It also
+                disappears at smaller screen sizes.
+            </li>
+            <li>The ‘Amazon Smile,’ ‘Stay Informed,’ and ‘Support Local Businesses’ hyperlinks look like regular
+                pictures rather than buttons or hyperlinks, lending to lower learnability.
+            </li>
+            <li>Many users go to the website to donate, so the relatively small font size of the ‘Donate’ button as well
+                as its location further down the page leads to lower efficiency and memorability.</li>
+            <li>Many parents may use the website in order to join the boosters club, so the lack of a prominent ‘Join
+                Us’ button leads to lower efficiency, learnability, and memorability.</li>
+            <li>Header hierarchy is unclear; it’s hard to figure out what the important sections are.
+            </li>
+            <li>Those looking specifically for the information about the next meeting information may have trouble
+                finding time and location as they are not well-highlighted on the page, lowering efficiency. </li>
+        </ol>
+        <h3>Accessibility</h3>
+        <p>Using <a href=https://wave.webaim.org target="_blank">WebAIM WAVE</a>, no errors or contrast errors were detected, which I
+            agree with. However, one of the
+            notable alerts brought up by WebAIM WAVE is that there is a missing first level heading. I agree that this
+            is a pertinent problem because proper headings not only provide a webpage with better structure and
+            organization but also ensure that users of assistive technologies (which rely on headings) can more easily
+            navigate a page. Another notable alert is the ‘redundant link’ alert in which both the webpage title and the
+            home tab lead users back to the same home page, which I don’t believe is a big problem since users often
+            have a conceptual model that both the website title and a home button have the same purpose. </p>
+        <h2>Part 2: Visual Redesign</h2>
+        <h3 id="lo-fi">Low-Fidelity Wireframing</h3>
+        <p>Using Balsamiq, I created three wireframes, one for PC, one for tablet, and one for smartphone.</p>
+        <div class="row">
+            <!-- Source: https://getbootstrap.com/docs/5.2/components/carousel/ -->
+            <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active justify-content-center">
+                        <img src="lofi-1.jpg" class="d-block w-75" alt="lofi PC" style="margin: auto">
+                    </div>
+                    <div class="carousel-item justify-content-center">
+                        <img src="lofi-2.jpg" class="d-block w-50" alt="lofi tablet" style="margin: auto">
+                    </div>
+                    <div class="carousel-item justify-content-center">
+                        <img src="lofi-3.jpg" class="d-block w-50" alt="lofi phone" style="margin:auto">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <h3 id="hi-fi" style="margin-top: 2%">Style Guide and High-Fidelity Prototypes</h3>
+        <p>Using Figma, I created a visual design style guide that displays colors, typography, icons, buttons, and
+            input boxes. Then, in Figma, I created three prototypes, one for PC, one for tablet, and one for smartphone.
+        </p>
+        <div class="row">
+            <!-- Source: https://getbootstrap.com/docs/5.2/components/carousel/ -->
+            <div id="carousel2" class="carousel slide carousel-dark" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active justify-content-center">
+                        <img src="styleguide.png" class="d-block w-75" alt="hifi PC" style="margin: auto">
+                    </div>
+                    <div class="carousel-item justify-content-center">
+                        <img src="figma-1.jpg" class="d-block w-75" alt="hifi PC" style="margin: auto">
+                    </div>
+                    <div class="carousel-item justify-content-center">
+                        <img src="figma-2.jpg" class="d-block w-50" alt="hifi tablet" style="margin: auto">
+                    </div>
+                    <div class="carousel-item justify-content-center">
+                        <img src="figma-3.jpg" class="d-block w-50" alt="hifi phone" style="margin:auto">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <h2 id="redesign">Part 3: Responsive Redesign</h2>
+        <h3> <a href="index.html" target="_blank">Redesigned Website</a></h3>
+        <p>Finally, I redesigned the website with HTML/CSS, taking advantage of Bootstrap components! I learned a lot
+            about the long and complex process that goes into designing a website and became much more familiar with
+            HTML and CSS. Hope you enjoy!</p>
+    </div>
+</body>
